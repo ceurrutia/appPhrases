@@ -67,12 +67,17 @@
             if (idiomaGuardado) {
                 document.getElementById("selector").value = idiomaGuardado;
                 selectLang(); // Llama a selectLang() para mostrar la frase en el idioma seleccionado
+            } else {
+                document.getElementById("selector").value = "Es";
+                selectLang();
             }
+            mandarFraseEs();
         }
 
         //Selccionar idioma
 
         function selectLang() {
+            cambiartexto();
             const idiomaSeleccionado = document.getElementById("selector").value;
             if (idiomaSeleccionado === "En") {
                 mandarFraseEn();
@@ -80,7 +85,7 @@
                 mandarFraseEs();
             }
             localStorage.setItem("idioma", idiomaSeleccionado);
-            cambiartexto();
+            
         }
 
         // Mostrar fecha actual
