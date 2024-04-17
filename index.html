@@ -66,12 +66,12 @@
             const idiomaGuardado = localStorage.getItem("idioma");
             if (idiomaGuardado) {
                 document.getElementById("selector").value = idiomaGuardado;
-                selectLang(); // Llama a selectLang() para mostrar la frase en el idioma seleccionado
+                selectLang(); 
             } else {
                 document.getElementById("selector").value = "Es";
                 selectLang();
             }
-            mandarFraseEs();
+            
         }
 
         //Selccionar idioma
