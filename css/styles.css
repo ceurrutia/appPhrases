@@ -7,3 +7,9 @@ h1{
     font-size: 3rem;
 }
 
+/* dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #f0eded;
+}
+
