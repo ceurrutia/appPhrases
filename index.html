@@ -23,7 +23,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
+          <img src="./img/logo-dark.png" width="100"><a class="navbar-brand" href="index.html"></a></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,7 +36,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#">Acerca de</a>
               </li>
@@ -58,13 +58,9 @@
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> -->
 
-            <button
-              id="modoOscuroBtn"
-              class="btn btn-light"
-              type="button"
-            >
+            <button id="modoOscuroBtn" class="btn btn-light" type="button">
               Activa el modo oscuro
             </button>
           </div>
@@ -73,7 +69,7 @@
     </header>
 
     <div class="container-fluid">
-      <h1>Coaching</h1>
+      <h1>Tu frase del día</h1>
 
       <select class="form-select" id="selector" onchange="selectLang()">
         <option value="Es" selected>Español</option>
@@ -82,18 +78,21 @@
 
       <br /><br />
 
-      <div class="alert alert-success" role="alert">
-        <p><strong>Hoy es:</strong></p>
-        <p id="fecha"></p>
-      </div>
-
       <div class="card">
         <div class="card-body">
-          <p id="textoFrase">Tu frase es:</p>
+          <p><strong>Hoy es:</strong></p>
+          <p id="fecha"></p>
+          <hr>
+          <h3 id="textoFrase">Tu frase es:</h3>
           <p id="mensaje"></p>
         </div>
       </div>
-    </div>
+
+      <!-- Comparte
+
+      <button id="facebook-share-btn">Compartir en Facebook</button>-->
+
+   
 
     <script>
       function cambiartexto() {
@@ -216,5 +215,16 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+  </div> 
+
+    <footer>
+
+     
+      <img src="/img/logo-white.png" width="100"/>
+      <p>2024 </p>
+      
+    </footer>
+ 
   </body>
 </html>
